@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* ===============================
+Top Page
+=============================== */
+* {
+    box-sizing: border-box;
+}
+.accordion-con {
+    max-width: 1960px;
+     margin: 0 auto;
+     padding: 0 20px;
+ 
+ }
+ .accordion-heading{
+    text-align: center;
+    font-size: 32px;
+    font-family: "lato",sans-serif;
+    font-weight: 700;
+    color: #03561E;
+ }
+ .accordion-con .sub-heading {
+    text-align: center;
+    font-size: 20px;
+    font-family: "lato",sans-serif;
+    font-weight: 700;
+    color: #90C31E;
+    margin-bottom: 60px;
+ }
+ .accordion-blk{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 85%;
+   
+ }
+.sec-con{
+    /* padding: 120px 0; */
+    margin: 0 auto;
+}
+
+.accordion-con .accordion-title {
+    position: relative;
+    background-color: #F5F5F5;
+    font-size: 23px;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 30px 40px;
+    border-radius: 5px;
+    
+}
+.accordion-content{
+    position: relative;
+    background-color: #F5F5F5;
+    font-size: 23px;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+.question{
+    font-size: 20px;
+    color: #fff;
+    background-color: #90C31E;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.accordion-title::before {
+    content: "Q";
+    display: inline;
+    color: #ff6d00;
+    padding:26px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #90C31E;
+    border-radius: 5px;
+    position: absolute;
+    left: -6%;
+    top: 0;
+}
+.accordion-con .accordion-content::before{
+    content: "A";
+    display: inline;
+    color: #fff;
+    font-size: 30px;
+    padding:26px;
+    background-color: #03561E;
+    position: absolute;
+    left: -6%;
+    top: 0;
+    border-radius: 5px;
+
+}
+
+.accordion-con .accordion-title::after {
+    content: "+";
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 41px;
+    height: 44px;
+    background-color: #03561E;
+    color: #F5F5F5;
+    font-size: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.accordion-con .accordion-title.open::after {
+    position: absolute;
+    content: "-";
+    top: 20px;
+    width: 41px;
+    height: 44px;
+    background-color: #03561E;
+    color: #F5F5F5;
+    font-size: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+}
+.btn{
+    background-color: #03561E;
+    color: #fff;
+    font-size: 20px;
+    font-family: "lato",sans-serif;
+    font-weight: 700;
+    padding: 25px 20px;
+    border-radius: 30px;
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+}
+.btn::after{
+    content: "";
+    background: url("../img/img_arrow.png") no-repeat center/contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+}
+@media screen and (max-width: 768px){
+   
+     .accordion-heading{
+        text-align: center;
+        font-size: 25px;
+     }
+     .accordion-con .sub-heading {
+        text-align: center;
+        font-size: 15px;
+        font-family: "lato",sans-serif;
+        font-weight: 700;
+        color: #90C31E;
+     }
+     .accordion-blk{
+        max-width: 700px;
+        margin: 0 auto;
+       
+     }
+     
+.accordion-con .accordion-title {
+    font-size: 15px;
+}
+.btn{
+    font-size: 10px;
+    padding: 15px 30px;
+    border-radius: 30px; 
+    margin-top: 45px;
+    text-align: center;
+    width: 260px;
+}
+.accordion-title::before { 
+    padding:22px; 
+}
+.accordion-con .accordion-content::before{
+    padding:22px;
+}
+.btn::after{
+    width: 10px;
+    height: 10px;
+    right: 20px;
+}
+    
+}
+
