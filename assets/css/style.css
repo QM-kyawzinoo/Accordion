@@ -49,7 +49,7 @@ Top Page
 }
 
 .accordion-con .accordion-title span {
-    padding: 26px;
+    padding: 30px;
     font-size: 30px;
     color: #fff;
     background-color: #90C31E;
@@ -86,7 +86,7 @@ Top Page
     font-size: 23px;
     font-weight: normal;
     cursor: pointer;
-    padding: 35px 0px 25px 30px;
+    padding: 35px 10px 25px 30px;
     border-radius: 10px;
     width: 100%;
     margin: 2px;
@@ -99,7 +99,7 @@ Top Page
 .accordion-blk .accordion-content span {
     color: #fff;
     font-size: 30px;
-    padding: 26px;
+    padding: 30px;
     background-color: #03561E;
     border-radius: 10px;
     cursor: pointer;
@@ -169,10 +169,12 @@ Top Page
     content: "";
     background: url("../img/img_arrow.png") no-repeat center/contain;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 14px;
     position: absolute;
-    right: 20px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media screen and (max-width: 768px) {
