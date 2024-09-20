@@ -1,15 +1,4 @@
-// Your JavaScript code goes here
-document.addEventListener("DOMContentLoaded", () => {});
-
-// Your jQuery code goes here
-$(function () {
-  // Your code here
-  //   $("button").on("click", () => {
-  //     console.log("Hello");
-  //   });
-});
 $(document).ready(function () {
-  $(function(){
     $(".accordion-content").css("display","none");
     // $(".accordion-title:first-of-type").addClass("open");
     $(".accordion-title").click(function(){
@@ -17,4 +6,3 @@ $(document).ready(function () {
      $(this).toggleClass("open").next().slideToggle(500);
     });
   });
-});
