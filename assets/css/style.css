@@ -226,7 +226,7 @@ Top Page
         font-size: 28px;
     }
     .accordion-con .accordion-title h3 {
-        font-size: 11px;
+        font-size: 10px;
         padding: 25px 20px;
     }
     .accordion-con .accordion-title::after {
@@ -259,10 +259,13 @@ Top Page
         padding: 16px;
     }
     .accordion-blk .accordion-content p {
-        font-size: 11px;
+        font-size: 10px;
         padding: 25px 19px;
     }
     .btn{
         width: 190px;
+    }
+    .sec-con {
+        padding: 90px 0;
     }
 }
