@@ -63,6 +63,16 @@
   <script src="js/jquery-migrate.min.js" defer></script>
   <script src="js/slick.min.js" defer></script>
   <script src="js/common.js" defer></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'dfl0cwg',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 
 <body>
@@ -71,10 +81,18 @@
       <h2 class="accordion-heading">よくあるご質問</h2>
     <p class="sub-heading">Question</p>
     <div class="accordion-blk">
-      <h3 class="accordion-title">採用にはどれくらい時間がかかりますか？</h3>
-    <div class="accordion-content">技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</div>
+      <div class="accordion-title"><span>Q</span><h3>採用にはどれくらい時間がかかりますか？</h3></div>
+      <div class="accordion-content"><span>A</span><p>技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</p></div>
     </div>
-      <div class="accordion-blk">
+    <div class="accordion-blk">
+      <div class="accordion-title"><span>Q</span><h3>外国人は何人まで採用できますか？</h3></div>
+      <div class="accordion-content"><span>A</span><p>技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</p></div>
+    </div>
+    <div class="accordion-blk">
+      <div class="accordion-title"><span>Q</span><h3>実習生は何年間仕事をすることができますか？</h3></div>
+      <div class="accordion-content"><span>A</span><p>技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</p></div>
+    </div>
+      <!-- <div class="accordion-blk">
         <h3 class="accordion-title">外国人は何人まで採用できますか？</h3>
       <div class="accordion-content">技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</div>
       </div>
@@ -82,7 +100,7 @@
     <div class="accordion-blk">
       <h3 class="accordion-title">実習生は何年間仕事をすることができますか？</h3>
     <div class="accordion-content">技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</div>
-    </div>
+    </div> -->
     <a href="#" class="btn">よくあるご質問まとめ</a> 
     </div>
     
