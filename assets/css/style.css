@@ -63,7 +63,7 @@ Top Page
     background-color: #F5F5F5;
     font-size: 23px;
     cursor: pointer;
-    padding: 35px 0px 25px 30px ;
+    padding: 35px 100px 25px 30px ;
     border-radius: 10px;
     width: 100%;
     margin: 0;
@@ -71,6 +71,7 @@ Top Page
     font-family: "hiragino-mincho-pron", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.36;
 }
 
 .accordion-content {
@@ -92,6 +93,7 @@ Top Page
     font-family: "hiragino-mincho-pron", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.36;
 }
 
 .accordion-blk .accordion-content span {
@@ -189,7 +191,8 @@ Top Page
 
     .accordion-con .accordion-title h3 {
         font-size: 15px;
-        padding: 34px 20px;
+        padding:34px 90px 34px 20px;
+        line-height: 2;
     }
 
     .btn {
@@ -217,6 +220,7 @@ Top Page
     .accordion-blk .accordion-content p {
         font-size: 15px;
         padding: 30px 19px;
+        line-height: 2;
     }
 
 }
@@ -227,7 +231,8 @@ Top Page
     }
     .accordion-con .accordion-title h3 {
         font-size: 10px;
-        padding: 25px 20px;
+        padding: 25px 55px 25px 20px;
+        line-height: 3;
     }
     .accordion-con .accordion-title::after {
         content: "+";
@@ -261,6 +266,7 @@ Top Page
     .accordion-blk .accordion-content p {
         font-size: 10px;
         padding: 25px 19px;
+        line-height: 3;
     }
     .btn{
         width: 190px;
