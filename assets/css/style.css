@@ -83,7 +83,7 @@ Top Page
 
 .accordion-blk .accordion-content p {
     background-color: #F5F5F5;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: normal;
     cursor: pointer;
     padding: 35px 10px 25px 30px;
@@ -220,7 +220,7 @@ Top Page
         right: 20px;
     }
     .accordion-blk .accordion-content p {
-        font-size: 15px;
+        font-size: 14px;
         padding: 30px 19px;
         line-height: 2;
     }
@@ -228,7 +228,7 @@ Top Page
 }
 @media screen and (max-width: 550px) {
     .accordion-con .accordion-title span {
-        padding: 16px;
+        padding: 25px;
         font-size: 28px;
     }
     .accordion-con .accordion-title h3 {
