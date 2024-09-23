@@ -228,12 +228,12 @@ Top Page
 }
 @media screen and (max-width: 550px) {
     .accordion-con .accordion-title span {
-        padding: 25px;
-        font-size: 28px;
+        padding: 15px;
+        font-size: 20px;
     }
     .accordion-con .accordion-title h3 {
         font-size: 8px;
-        padding: 31px 55px 25px 20px;
+        padding: 16px 55px 12px 20px;
         line-height: 3;
     }
     .accordion-con .accordion-title::after {
@@ -241,33 +241,34 @@ Top Page
         position: absolute;
         top: 50%;
         right: 12px;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background-color: #03561E;
         color: #F5F5F5;
-        font-size: 27px;
+        font-size: 17px;
+        text-align: center;
     }
     .accordion-con .accordion-title.open::after {
         position: absolute;
         content: "-";
         top: 50%;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background-color: #03561E;
         color: #F5F5F5;
         font-size: 40px;
         border-radius: 50%;
         text-align: center;
-        font-size: 24px;
+        font-size: 16px;
     }
     .accordion-blk .accordion-content span {
         color: #fff;
-        font-size: 28px;
-        padding: 25px;
+        font-size: 15px;
+        padding: 17px;
     }
     .accordion-blk .accordion-content p {
         font-size: 8px;
-        padding: 25px 19px;
+        padding: 12px 19px;
         line-height: 3;
     }
     .btn{
