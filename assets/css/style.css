@@ -71,6 +71,9 @@ section{
     padding: 22px;
     /* position: relative; */
     cursor: pointer;
+    display: flex;
+        justify-content: center;
+        align-items: center;
     /* padding-left: 15px; */
 }
 .nav-list li a{
@@ -92,13 +95,16 @@ section{
     background-color: #2153A1; /* Background color */
     border: 2px solid #2153A1; /* Optional border */
     position: absolute;
-    top: 7px;
+    top: 4px;
     /* transform: translateY(-50%); */
-   left: -20px;
+   left: -15px;
 }
 .nav-list li:hover,
 .nav-list li.active {
   background-color: #2153A1;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
   
 }
 .nav-list li:hover a::before,.nav-list li.active a::before {
@@ -126,8 +132,8 @@ section{
     background-color: #2153A1; /* Background color */
     border: 2px solid #2153A1; /* Optional border */
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top:3px;
+    /* transform: translateY(-50%); */
    left: 0;
 }
 .nav-content .first-content .fir-txt{
@@ -161,7 +167,7 @@ section{
     font-weight: 500;
     font-family: "Poppins";
     display: flex;
-    /* align-items: center; */
+    align-items: flex-start;
     gap: 7px;
    
  }
@@ -188,6 +194,19 @@ section{
     position: relative;
     padding-left: 26px;
     margin: 0;
+    color: #2153A1;
+ }
+
+ .second-content .fir-txt .date{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New";
+    background-color: #2153A1;
+    border-radius: 2px;
+    color: #E0EDFA;
+    width: 51px;
+    text-align: center;
+    padding: 3px;
  }
  /* .nav-content .second-content .fir-txt::before{
     content: "";
@@ -302,6 +321,10 @@ section{
     .nav-list li {
         max-width: 250px;
 }
+.second-content .fir-txt .date {
+    font-size: 11px;
+}
+
 }
 @media screen and (max-width: 768px) {
     section{
@@ -357,7 +380,7 @@ section{
     /* width: calc((100% -8px)/2); */
     background-color: #EFF6FC;
     border-radius: 8px;
-    padding:17px 13px;
+    padding:17px 24px;
     position: relative;
     cursor: pointer
 }
@@ -375,7 +398,7 @@ section{
     position: absolute;
     top: 7px;
     /* transform: translateY(-50%); */
-    left: -11px;
+    left: -15px;
 }
 .nav-content .first {
     display: block;
@@ -403,7 +426,7 @@ section{
     font-family: "Poppins";
     display: block;
     gap: 10px;
-    line-height: 2;
+    /* line-height: 2; */
 }
 
 
@@ -432,5 +455,12 @@ section{
     width: 20px;
     height: 16px;
     top: 6px;
+}
+.second-content .fir-txt .date {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.nav-content .second-content .fir-txt p{
+    margin-top: 7px;
 }
 }
