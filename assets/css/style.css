@@ -6,275 +6,496 @@ Top Page
 * {
     box-sizing: border-box;
 }
+body{
+    background-color: #FFFFFF;
+}
+section{
+    background: linear-gradient(to right, #E0EDFA , #C7E3E1);
+    margin-right: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
 
-.accordion-con {
-    max-width: 1440px;
+.container{
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
-
+    padding: 0 20px;   
 }
-
-.accordion-heading {
-    text-align: center;
-    font-size: 32px;
-    color: #03561E;
-    font-family: "hiragino-mincho-pron", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+.content-blk{
+    padding: 65px 80px 90px 120px;
 }
-
-.accordion-con .sub-heading {
-    text-align: center;
-    font-size: 20px;
-    font-family: "lato", sans-serif;
-    font-weight: 700;
-    color: #90C31E;
-    margin-bottom: 60px;
-
-}
-
-.accordion-blk {
-    margin-bottom: 30px;
-}
-
-.sec-con {
-    padding: 160px 0;
-}
-
-.accordion-con .accordion-title {
-    position: relative;
+.logo-blk{
+    margin-bottom: 45px;
     display: flex;
     align-items: center;
-    gap: 5px;
 }
-
-.accordion-con .accordion-title span {
-    padding: 30px;
-    font-size: 30px;
-    color: #fff;
-    background-color: #90C31E;
-    border-radius: 10px;
-    font-family: "lato", sans-serif;
-    font-weight: 700;
-    cursor: pointer;
+.logo-blk a h1{
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
-
-.accordion-con .accordion-title h3 {
-    background-color: #F5F5F5;
-    font-size: 23px;
-    cursor: pointer;
-    padding: 35px 100px 25px 30px ;
-    border-radius: 10px;
-    width: 100%;
+.logo-blk a h1 img{
+    width: 30px;
+    height: 41px;
+}
+.logo-text{
+    font-size: 34px;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New";
+    color: #020000;
+    padding-left: 13px;
     margin: 0;
-    cursor: pointer;
-    font-family: "hiragino-mincho-pron", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.36;
 }
-
-.accordion-content {
+.tab-blk{
+    max-width: 1160px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    margin-top: 50px;
+}
+.tab-content{
+    padding: 70px 102px 80px ;
+}
+.nav-list{
+    display: grid;
+    gap: 4px;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.nav-list li {
+    text-align: center;
+    max-width: 232px;
+    background-color: #EFF6FC;
+    border-radius: 8px;
+    padding: 22px;
     position: relative;
+    cursor: pointer;
+    /* padding-left: 15px; */
+}
+.nav-list li a{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New";
+    color: #020000;
+    
+}
+.nav-list li:hover >a,.nav-list li.active >a{
+    color: #EFF6FC;
+}
+.nav-list li a::before{
+    content: "";
+    display: inline-block;
+    width: 4px;      /* Width of the rectangle */
+    height: 4px;      /* Height of the rectangle */
+    background-color: #2153A1; /* Background color */
+    border: 2px solid #2153A1; /* Optional border */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   left: 15px;
+}
+.nav-list li:hover,
+.nav-list li.active {
+  background-color: #2153A1;
+  
+}
+.nav-list li:hover a::before,.nav-list li.active a::before {
+    background-color: #FFFFFF; /* Change to desired color on hover */
+    border-color: #FFFFFF;
+}
+.nav-content .first{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px dashed #7997C6;
+}
+.nav-content .first-content{
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
+.nav-content .first .sec-txt{
+    position: relative;
+    /* padding-left: 13px; */
+}
+.nav-content .first-content .sec-txt::before{
+    content: "";
+    display: inline-block;
+    width: 4px;      /* Width of the rectangle */
+    height: 4px;      /* Height of the rectangle */
+    background-color: #2153A1; /* Background color */
+    border: 2px solid #2153A1; /* Optional border */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   left: 0;
+}
+.nav-content .first-content .fir-txt{
+    margin: 0;
+    color: #020000;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+.nav-content .first-content .sec-txt{
+    margin: 0;
+    color: #2153A1;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New";
+}
+.nav-content .second-content{
+    
+    padding: 25px 0;
+    
+ }
+ .nav-content .second-content .fir-txt {
+    color: #2153A1;
+    margin: 0;
+    position: relative;
+    /* padding-left: 60px; */
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins";
     display: flex;
     align-items: center;
-    gap: 5px;
-}
-
-.accordion-blk .accordion-content p {
-    background-color: #F5F5F5;
-    font-size: 21px;
-    font-weight: normal;
-    cursor: pointer;
-    padding: 35px 10px 25px 30px;
-    border-radius: 10px;
-    width: 100%;
-    margin: 2px;
-    font-family: "hiragino-mincho-pron", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.36;
-}
-
-.accordion-blk .accordion-content span {
-    color: #fff;
-    font-size: 30px;
-    padding: 30px;
-    background-color: #03561E;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: "lato", sans-serif;
-    font-weight: 700;
-}
-
-.question {
-    font-size: 20px;
-    color: #fff;
-    background-color: #90C31E;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.accordion-con .accordion-title::after {
-    content: "+";
+    gap: 7px;
+   
+ }
+ .nav-content .second-content .fir-txt p{
+    margin: 0;
+ }
+ .nav-content .second-content .sec-txt {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New";
+   
+ }
+ .nav-content .second-content a p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Noto Sans JP";
+    text-decoration: underline;
+    position: relative;
+    padding-left: 26px;
+    margin: 0;
+ }
+ /* .nav-content .second-content .fir-txt::before{
+    content: "";
+    display: inline-block;
+    background: url("../img/icon_train.png") no-repeat center/contain;
+    width: 51px;
+    height: 20px;
     position: absolute;
     top: 50%;
-    right: 35px;
-    width: 40px;
-    height: 40px;
-    background-color: #03561E;
-    color: #F5F5F5;
-    font-size: 37px;
-    border-radius: 50%;
-    text-align: center;
     transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.accordion-con .accordion-title.open::after {
+    left: 0;
+ } */
+ .nav-content .second-content div a p::before{
+    content: "";
+    display: inline-block;
+    background: url("../img/icon_train1.png") no-repeat center/contain;
+    width: 20px;
+    height: 16px;
     position: absolute;
-    content: "-";
     top: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: #03561E;
-    color: #F5F5F5;
-    font-size: 40px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 31px;
     transform: translateY(-50%);
-    cursor: pointer;
+    left: 0px; 
+    
 }
-
-.btn {
-    background-color: #03561E;
-    color: #fff;
-    font-size: 20px;
-    padding: 25px 20px;
-    border-radius: 30px;
+.btn{
     display: block;
-    width: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
-    text-align: center;
+    width: 240px;
+    margin-top: 63px;
+    border: 1px solid  transparent;
+    border-radius: 32px;
+    background: linear-gradient(to right, #004D85, #066A98, #076C98,#108291, #0B8082);
+    /* text-align: center; */
+    color: #FFFFFF;
+    cursor: pointer;
     position: relative;
-    font-family: "hiragino-mincho-pron", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+    font-size: 16px;
+    padding: 22px 0 22px 35px;
+    transition: background-position 0.9s ease;
 }
-
-.btn::after {
-    content: "";
-    background: url("../img/img_arrow.png") no-repeat center/contain;
-    display: inline-block;
-    width: 10px;
-    height: 14px;
+.btn:hover{
+    background: linear-gradient(90deg, #0B8082, #108291,#066A98,#004D85); /* Gradient on hover */
+}
+.btn span{
+    background: url("../img/circle.png") no-repeat center/contain;
+    position: relative;
+    display: inline;
+    width: 36px;
+    height: 36px;
     position: absolute;
-    right: 30px;
     top: 50%;
     transform: translateY(-50%);
+    right: 10px;
 }
-
+.btn::after{
+    position:absolute;
+    content: "";
+    display: inline-block;
+    background: url("../img/img_arrow.png") no-repeat center/contain;
+    width: 33px;
+    height: 6px;
+    /* background-color: #FFFFFF; 
+    border-radius: 50%; */
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    /* font-size: 12px; */
+}
 @media screen and (max-width: 768px) {
-
-    .accordion-heading {
-        font-size: 25px;
+    section{
+        background: linear-gradient(to right, #E0EDFA , #C7E3E1);
+        margin-right:0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
-
-    .accordion-con .sub-heading {
-        font-size: 15px;
+    .container{
+        /* max-width: 375px; */
+        margin: 0 auto;
+        /* padding: 0 20px;    */
     }
-
-    .accordion-blk {
-        margin-bottom: 20px;
+    .content-blk{
+        padding: 40px 0px 30px 0px;
     }
-
-    .accordion-con .accordion-title h3 {
-        font-size: 15px;
-        padding:34px 90px 34px 20px;
-        line-height: 2;
+    .logo-blk {
+        margin-bottom: 30px;
     }
-
-    .btn {
-        font-size: 10px;
-        padding: 15px 30px;
-        border-radius: 30px;
-        margin-top: 45px;
-        text-align: center;
-        width: 260px;
+    .logo-blk a h1 img {
+        width: 20px;
+        height: 20px;
     }
-
-    .accordion-title::before {
-        padding: 22px;
+    .logo-text {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: "Zen Kaku Gothic New";
+        color: #020000;
+        padding-left: 5px;
+        margin: 0;
     }
-
-    .accordion-con .accordion-content::before {
-        padding: 22px;
+    .tab-blk {
+        /* max-width: 340px;
+        margin: 0 auto; */
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        /* margin-top: 50px; */
     }
-
-    .btn::after {
-        width: 10px;
-        height: 10px;
-        right: 20px;
-    }
-    .accordion-blk .accordion-content p {
-        font-size: 14px;
-        padding: 30px 19px;
-        line-height: 2;
-    }
-
+    .tab-content {
+        padding: 22px 50px 70px;
+    
 }
-@media screen and (max-width: 550px) {
-    .accordion-con .accordion-title span {
-        padding: 15px;
-        font-size: 20px;
+.nav-list {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.nav-list li {
+    text-align: center;
+    /* max-width: 150px; */
+    background-color: #EFF6FC;
+    border-radius: 8px;
+    padding:10px 13px;
+    position: relative;
+    cursor: pointer
+}
+.nav-list li a {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.nav-list li a::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #2153A1;
+    border: 2px solid #2153A1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+}
+.nav-content .first {
+    display: block;
+}
+.nav-content .first-content {
+    margin-bottom: 12px;
+    padding-top: 21px;
+}
+.nav-content .second-content {
+    padding-top: 0px;
+    padding-bottom: 25px;
+}
+.nav-content .first-content .fir-txt {
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+.nav-content .first-content .sec-txt {
+    padding-left: 12px;
+    font-size: 14px;
+}
+.nav-content .second-content .fir-txt {
+    margin-bottom: 17px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Poppins";
+    display: block;
+    gap: 10px;
+}
+
+.nav-content .second-content .fir-txt img{
+    width: 51px;
+    height: 20px;
+    margin-bottom: 7px;
+}
+.nav-content .second-content .sec-txt {
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+.nav-content .second-content a p {
+    font-size: 14px;
+    padding-left: 26px;
+}
+.btn {
+    max-width: 240px;
+    margin-top: 50px;
+    border: 1px solid transparent;
+    padding: 22px 0 22px 35px;
+}
+}
+
+@media screen and (max-width: 375.9px) {
+    section{
+        background: linear-gradient(to right, #E0EDFA , #C7E3E1);
+        margin-right:0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
-    .accordion-con .accordion-title h3 {
-        font-size: 8px;
-        padding: 16px 55px 12px 20px;
-        line-height: 3;
+    .container{
+        max-width: 375px;
+        margin: 0 auto;
+        /* padding: 0 20px;    */
     }
-    .accordion-con .accordion-title::after {
-        content: "+";
-        position: absolute;
-        top: 50%;
-        right: 12px;
+    .content-blk{
+        padding: 40px 0px 30px 0px;
+    }
+    .logo-blk {
+        margin-bottom: 30px;
+    }
+    .logo-blk a h1 img {
         width: 20px;
         height: 20px;
-        background-color: #03561E;
-        color: #F5F5F5;
-        font-size: 17px;
-        text-align: center;
     }
-    .accordion-con .accordion-title.open::after {
-        position: absolute;
-        content: "-";
-        top: 50%;
-        width: 20px;
-        height: 20px;
-        background-color: #03561E;
-        color: #F5F5F5;
-        font-size: 40px;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 16px;
+    .logo-text {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: "Zen Kaku Gothic New";
+        color: #020000;
+        padding-left: 5px;
+        margin: 0;
     }
-    .accordion-blk .accordion-content span {
-        color: #fff;
-        font-size: 15px;
-        padding: 17px;
+    .tab-blk {
+        max-width: 340px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        /* margin-top: 50px; */
     }
-    .accordion-blk .accordion-content p {
-        font-size: 8px;
-        padding: 12px 19px;
-        line-height: 3;
-    }
-    .btn{
-        width: 190px;
-    }
-    .sec-con {
-        padding: 90px 0;
-    }
+    .tab-content {
+        padding: 22px 13px 70px;
+    
+}
+.nav-list {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.nav-list li {
+    text-align: center;
+    max-width: 150px;
+    background-color: #EFF6FC;
+    border-radius: 8px;
+    padding:10px 13px;
+    position: relative;
+    cursor: pointer
+}
+.nav-list li a {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.nav-list li a::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #2153A1;
+    border: 2px solid #2153A1;
+    position: absolute;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 6px;
+}
+.nav-content .first {
+    display: block;
+}
+.nav-content .first-content {
+    margin-bottom: 12px;
+    padding-top: 21px;
+}
+.nav-content .second-content {
+    padding-top: 0px;
+    padding-bottom: 25px;
+}
+.nav-content .first-content .fir-txt {
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+.nav-content .first-content .sec-txt {
+    padding-left: 12px;
+    font-size: 14px;
+}
+.nav-content .second-content .fir-txt {
+    margin-bottom: 17px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Poppins";
+    display: block;
+    gap: 10px;
+    line-height: 2;
+}
+
+
+.nav-content .second-content .fir-txt img{
+    width: 51px;
+    height: 20px;
+    margin-bottom: 7px;
+}
+.nav-content .second-content .sec-txt {
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.nav-content .second-content a p {
+    font-size: 14px;
+    padding-left: 26px;
+    line-height: 2;
+}
+.btn {
+    max-width: 240px;
+    margin-top: 50px;
+    border: 1px solid transparent;
+    padding: 22px 0 22px 35px;
+}
 }

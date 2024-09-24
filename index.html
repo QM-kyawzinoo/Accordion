@@ -1,151 +1,415 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>ページタイトル</title>
-    <meta name="description" content="ページの説明" />
-    <meta name="format-detection" content="telephone=no" />
 
-    <!-- favicon/webclipicon -->
-    <!-- <link rel="icon" href="favicon.ico" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ページタイトル</title>
+  <meta name="description" content="ページの説明" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- favicon/webclipicon -->
+  <!-- <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="webclip.png" /> -->
 
-    <!-- ogp -->
-    <meta property="og:site_name" content="サイト名" />
-    <meta property="og:url" content="URL" />
-    <meta property="og:type" content="website or article" />
-    <meta property="og:title" content="ページのタイトル" />
-    <meta property="og:description" content="ページの説明" />
-    <meta property="og:image" content="URL" />
-    <meta property="og:locale" content="ja_JP" />
-    <!-- <meta property="fb:app_id" content="AppID"> -->
-    <meta name="twitter:card" content="summary_large_image or summary" />
-    <!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
-    <meta name="twitter:description" content="ページの説明" />
-    <meta name="twitter:image:src" content="URL" />
+  <!-- ogp -->
+  <meta property="og:site_name" content="サイト名" />
+  <meta property="og:url" content="URL" />
+  <meta property="og:type" content="website or article" />
+  <meta property="og:title" content="ページのタイトル" />
+  <meta property="og:description" content="ページの説明" />
+  <meta property="og:image" content="URL" />
+  <meta property="og:locale" content="ja_JP" />
+  <!-- <meta property="fb:app_id" content="AppID"> -->
+  <meta name="twitter:card" content="summary_large_image or summary" />
+  <!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
+  <meta name="twitter:description" content="ページの説明" />
+  <meta name="twitter:image:src" content="URL" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- css -->
-    <base href="./assets/" />
-    <link rel="stylesheet" href="css/import.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- js -->
-    <!-- Alpine -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script src="js/jquery-3.7.1.min.js" defer></script>
-    <script src="js/jquery-migrate.min.js" defer></script>
-    <script src="js/slick.min.js" defer></script>
-    <script src="js/common.js" defer></script>
-    <script>
-      (function (d) {
-        var config = {
-            kitId: "dfl0cwg",
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-          }, config.scriptTimeout),
-          tk = d.createElement("script"),
-          f = false,
-          s = d.getElementsByTagName("script")[0],
-          a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
-  </head>
+  <!-- css -->
+  <base href="./assets/" />
+  <link rel="stylesheet" href="css/import.css" />
 
-  <body>
-    <section class="accordion-con">
-      <div class="sec-con">
-        <h2 class="accordion-heading">よくあるご質問</h2>
-        <p class="sub-heading">Question</p>
-        <div class="accordion-blk">
-          <div class="accordion-title">
-            <span>Q</span>
-            <h3>採用にはどれくらい時間がかかりますか？</h3>
+  <!-- js -->
+  <!-- Alpine -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js" defer></script>
+  <script src="js/common.js" defer></script>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="content-blk">
+        <div class="logo-blk">
+          <a href="#"><h1><img src="./img/img_logo.png" alt="logo"><p class="logo-text">お知らせ</p></h1></a>
+        </div>
+        <div class="tab-blk">
+          <div class="tab-content">
+            <ul class="nav-list">
+              <li><a href="#tab1">テキス</a></li>
+              <li><a href="#tab2">テキステキステキス</a></li>
+              <li><a href="#tab3">テキステキステキス</a></li>
+              <li><a href="#tab4">テキステキステキス</a></li>
+            </ul>
+            <div class="nav-content">
+              <div id="tab1" class="content">
+                <div class="first">
+                  <div class="first-content">
+                  <p class="fir-txt">2024年7月1日</p>
+                  <p class="sec-txt">テキス</p>
+                </div>
+                <div class="second-content">
+                  <div class="fir-txt">
+                    <img src="./img/icon_train.png" alt="">
+                    <p>2024年06月14日、17日～19日及び07月19日、20日</p>
+                  </div>
+                  <div>
+                    <p class="sec-txt">テキステキステキステキステキステキス</p>
+                    <a href="#"><p>テキステキステキステキステキステキステキステキステキステキス</p></a>
+                  </div>
+                </div>
+              </div>
+              <!-- first blk -->
+              <div class="first">
+                <div class="first-content">
+                <p class="fir-txt">2024年6月19日</p>
+                <p class="sec-txt">テキス</p>
+              </div>
+              <div class="second-content">
+                <div class="fir-txt">
+                  <img src="./img/icon_train.png" alt="">
+                  <p>2024年7月22日、29日、8月5日、19日</p>
+                </div>
+                <div>
+                  <p class="sec-txt">テキステキステキステキステキステキステキス</p>
+                  <a href="#"><p>テキステキステキステキステキステキス</p></a>
+                </div>
+              </div>
+            </div>
+            <!-- second blk  -->
+            <div class="first">
+              <div class="first-content">
+              <p class="fir-txt">2024年5月7日</p>
+              <p class="sec-txt">テキス</p>
+            </div>
+            <div class="second-content">
+              <div class="fir-txt">
+                <img src="./img/icon_train.png" alt="">
+                <p>2024年7月22日、29日、8月5日、19日</p>
+              </div>
+              <div>
+                <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+              </div>
+            </div>
           </div>
-          <div class="accordion-content">
-            <span>A</span>
-            <p>技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</p>
+           <!-- third blk -->
+           <div class="first">
+            <div class="first-content">
+            <p class="fir-txt">2024年5月7日</p>
+            <p class="sec-txt">テキス</p>
+          </div>
+          <div class="second-content">
+            <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+            <div>
+              <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+            </div>
           </div>
         </div>
-        <div class="accordion-blk">
-          <div class="accordion-title">
-            <span>Q</span>
-            <h3>外国人は何人まで採用できますか？</h3>
-          </div>
-          <div class="accordion-content">
-            <span>A</span>
-            <p>技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</p>
+        <!-- fourth blk -->
+        <div class="first">
+          <div class="first-content">
+          <p class="fir-txt">2024年5月7日</p>
+          <p class="sec-txt">テキス</p>
+        </div>
+        <div class="second-content">
+          <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+          <div>
+            <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
           </div>
         </div>
-        <div class="accordion-blk">
-          <div class="accordion-title">
-            <span>Q</span>
-            <h3>実習生は何年間仕事をすることができますか？</h3>
-          </div>
-          <div class="accordion-content">
-            <span>A</span>
-            <p>技能実習1号→2号だと計3年間、3号まで行くと追加で2年間です。</p>
-          </div>
-        </div>
-        <a href="#" class="btn">よくあるご質問まとめ</a>
       </div>
-    </section>
-  </body>
+ 
+            </div>
+            <!-- tab1 -->
+            <div id="tab2" class="content">
+              <div class="first">
+                <div class="first-content">
+                <p class="fir-txt">2024年7月1日</p>
+                <p class="sec-txt">テキス</p>
+              </div>
+              <div class="second-content">
+                <div class="fir-txt">
+                  <img src="./img/icon_train.png" alt="">
+                  <p>2024年06月14日、17日～19日及び07月19日、20日</p>
+                </div>
+                <div>
+                  <p class="sec-txt">テキステキステキステキステキステキス</p>
+                  <a href="#"><p>テキステキステキステキステキステキステキステキステキステキス</p></a>
+                </div>
+              </div>
+            </div>
+            <!-- first blk -->
+            <div class="first">
+              <div class="first-content">
+              <p class="fir-txt">2024年6月19日</p>
+              <p class="sec-txt">テキス</p>
+            </div>
+            <div class="second-content">
+              <div class="fir-txt">
+                <img src="./img/icon_train.png" alt="">
+                <p>2024年7月22日、29日、8月5日、19日</p>
+              </div>
+              <div>
+                <p class="sec-txt">テキステキステキステキステキステキステキス</p>
+                <a href="#"><p>テキステキステキステキステキステキス</p></a>
+              </div>
+            </div>
+          </div>
+          <!-- second blk  -->
+          <div class="first">
+            <div class="first-content">
+            <p class="fir-txt">2024年5月7日</p>
+            <p class="sec-txt">テキス</p>
+          </div>
+          <div class="second-content">
+            <div class="fir-txt">
+              <img src="./img/icon_train.png" alt="">
+              <p>2024年7月22日、29日、8月5日、19日</p>
+            </div>
+            <div>
+              <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+            </div>
+          </div>
+        </div>
+         <!-- third blk -->
+         <div class="first">
+          <div class="first-content">
+          <p class="fir-txt">2024年5月7日</p>
+          <p class="sec-txt">テキス</p>
+        </div>
+        <div class="second-content">
+          <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+          <div>
+            <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+          </div>
+        </div>
+      </div>
+      <!-- fourth blk -->
+      <div class="first">
+        <div class="first-content">
+        <p class="fir-txt">2024年5月7日</p>
+        <p class="sec-txt">テキス</p>
+      </div>
+      <div class="second-content">
+        <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+        <div>
+          <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+        </div>
+      </div>
+    </div>
+
+          </div>
+          <!-- tab2 -->
+          <div id="tab3" class="content">
+            <div class="first">
+              <div class="first-content">
+              <p class="fir-txt">2024年7月1日</p>
+              <p class="sec-txt">テキス</p>
+            </div>
+            <div class="second-content">
+              <div class="fir-txt">
+                <img src="./img/icon_train.png" alt="">
+                <p>2024年06月14日、17日～19日及び07月19日、20日</p>
+              </div>
+              <div>
+                <p class="sec-txt">テキステキステキステキステキステキス</p>
+                <a href="#"><p>テキステキステキステキステキステキステキステキステキステキス</p></a>
+              </div>
+            </div>
+          </div>
+          <!-- first blk -->
+          <div class="first">
+            <div class="first-content">
+            <p class="fir-txt">2024年6月19日</p>
+            <p class="sec-txt">テキス</p>
+          </div>
+          <div class="second-content">
+            <div class="fir-txt">
+              <img src="./img/icon_train.png" alt="">
+              <p>2024年7月22日、29日、8月5日、19日</p>
+            </div>
+            <div>
+              <p class="sec-txt">テキステキステキステキステキステキステキス</p>
+              <a href="#"><p>テキステキステキステキステキステキス</p></a>
+            </div>
+          </div>
+        </div>
+        <!-- second blk  -->
+        <div class="first">
+          <div class="first-content">
+          <p class="fir-txt">2024年5月7日</p>
+          <p class="sec-txt">テキス</p>
+        </div>
+        <div class="second-content">
+          <div class="fir-txt">
+            <img src="./img/icon_train.png" alt="">
+            <p>2024年7月22日、29日、8月5日、19日</p>
+          </div>
+          <div>
+            <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+          </div>
+        </div>
+      </div>
+       <!-- third blk -->
+       <div class="first">
+        <div class="first-content">
+        <p class="fir-txt">2024年5月7日</p>
+        <p class="sec-txt">テキス</p>
+      </div>
+      <div class="second-content">
+        <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+        <div>
+          <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+        </div>
+      </div>
+    </div>
+    <!-- fourth blk -->
+    <div class="first">
+      <div class="first-content">
+      <p class="fir-txt">2024年5月7日</p>
+      <p class="sec-txt">テキス</p>
+    </div>
+    <div class="second-content">
+      <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+      <div>
+        <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+      </div>
+    </div>
+  </div>
+
+        </div>
+        <!-- tab3 -->
+        <div id="tab4" class="content">
+          <div class="first">
+            <div class="first-content">
+            <p class="fir-txt">2024年7月1日</p>
+            <p class="sec-txt">テキス</p>
+          </div>
+          <div class="second-content">
+            <div class="fir-txt">
+              <img src="./img/icon_train.png" alt="">
+              <p>2024年06月14日、17日～19日及び07月19日、20日</p>
+            </div>
+            <div>
+              <p class="sec-txt">テキステキステキステキステキステキス</p>
+              <a href="#"><p>テキステキステキステキステキステキステキステキステキステキス</p></a>
+            </div>
+          </div>
+        </div>
+        <!-- first blk -->
+        <div class="first">
+          <div class="first-content">
+          <p class="fir-txt">2024年6月19日</p>
+          <p class="sec-txt">テキス</p>
+        </div>
+        <div class="second-content">
+          <div class="fir-txt">
+            <img src="./img/icon_train.png" alt="">
+            <p>2024年7月22日、29日、8月5日、19日</p>
+          </div>
+          <div>
+            <p class="sec-txt">テキステキステキステキステキステキステキス</p>
+            <a href="#"><p>テキステキステキステキステキステキス</p></a>
+          </div>
+        </div>
+      </div>
+      <!-- second blk  -->
+      <div class="first">
+        <div class="first-content">
+        <p class="fir-txt">2024年5月7日</p>
+        <p class="sec-txt">テキス</p>
+      </div>
+      <div class="second-content">
+        <div class="fir-txt">
+          <img src="./img/icon_train.png" alt="">
+          <p>2024年7月22日、29日、8月5日、19日</p>
+        </div>
+        <div>
+          <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+        </div>
+      </div>
+    </div>
+     <!-- third blk -->
+     <div class="first">
+      <div class="first-content">
+      <p class="fir-txt">2024年5月7日</p>
+      <p class="sec-txt">テキス</p>
+    </div>
+    <div class="second-content">
+      <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+      <div>
+        <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+      </div>
+    </div>
+  </div>
+  <!-- fourth blk -->
+  <div class="first">
+    <div class="first-content">
+    <p class="fir-txt">2024年5月7日</p>
+    <p class="sec-txt">テキス</p>
+  </div>
+  <div class="second-content">
+    <!-- <p class="fir-txt">2024年7月22日、29日、8月5日、19日</p> -->
+    <div>
+      <p class="sec-txt">テキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキステキス</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <!-- tab4 -->
+
+
+          </div>
+          <a href="#" class="btn">新着情報一覧を見る<span></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+
 </html>

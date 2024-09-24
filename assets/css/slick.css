@@ -78,9 +78,9 @@
 {
     display: none;
     float: left;
+
     height: 100%;
     min-height: 1px;
-    
 }
 [dir='rtl'] .slick-slide
 {
@@ -117,4 +117,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-

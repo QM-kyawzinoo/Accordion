@@ -60,11 +60,11 @@
     -webkit-font-smoothing: antialiased;
     line-height: 1;
     opacity: .75;
-    color: red;
+    color: white;
 }
 
 .slick-prev {
-    left: -13px;
+    left: -25px;
 }
 [dir="rtl"] .slick-prev {
     right: -25px;
@@ -78,7 +78,7 @@
 }
 
 .slick-next {
-    right: 11px;
+    right: -25px;
 }
 [dir="rtl"] .slick-next {
     right: auto;
@@ -156,4 +156,3 @@
     opacity: .75;
     color: black;
 }
-
